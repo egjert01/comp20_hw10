@@ -34,7 +34,6 @@ app.post('/process', (req, res) => {
         collection.find(doc).toArray().then(function(data){
             var built = parseData(data)
             res.send(built);
-            client.close();
         })
     })
 })
