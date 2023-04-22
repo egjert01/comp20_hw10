@@ -1,0 +1,26 @@
+<!-- Acknowledgement: https://medium.com/swlh/read-html-form-data-using-get-and-post-method-in-node-js-8d2c7880adbf -->
+<!DOCTYPE html>
+<head> 
+    <title>Stock Market Ticker</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>Stock Ticker</h1>
+    <form action="/process" method="POST">
+        <fieldset>
+            <h3>Find a stock ticker</h3>
+            <label>Input: </label>
+
+            <input type="text" id="input" name="input">
+
+            <br><br>
+
+            <input type="radio" id="company" value="company" name="type" required><label for='company' class="light" >company</label><br/>
+            <input type="radio" id="ticker" value="ticker" name="type"><label for="ticker" class="light">ticker</label>
+        
+        </fieldset>
+        <!-- <button type="submit">SUBMIT</button> -->
+        <input type="submit" value="Submit" />
+    </form>
+</body>
